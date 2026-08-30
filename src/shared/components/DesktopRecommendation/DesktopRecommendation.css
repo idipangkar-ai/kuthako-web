@@ -1,0 +1,74 @@
+.desktop-recommendation {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .desktop-recommendation {
+    position: fixed;
+
+    z-index: 100;
+
+    left: 16px;
+    right: 16px;
+    bottom: 18px;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 13px;
+
+    padding: 17px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+    background:
+      color-mix(in srgb, var(--bg) 92%, transparent);
+
+    box-shadow:
+      0 20px 60px rgba(8, 6, 13, 0.18),
+      0 0 30px color-mix(in srgb, var(--accent) 5%, transparent);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .desktop-recommendation-icon {
+    width: 34px;
+    height: 34px;
+
+    flex-shrink: 0;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 11px;
+
+    color: var(--accent);
+
+    background: var(--accent-bg);
+
+    border: 1px solid var(--accent-border);
+
+    font-size: 15px;
+  }
+
+  .desktop-recommendation-content strong {
+    display: block;
+
+    color: var(--text-h);
+
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .desktop-recommendation-content p {
+    margin-top: 5px;
+
+    color: var(--text);
+
+    font-size: 11px;
+    line-height: 1.5;
+  }
+}

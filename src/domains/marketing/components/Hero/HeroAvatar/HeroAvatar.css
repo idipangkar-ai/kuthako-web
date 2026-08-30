@@ -1,0 +1,18 @@
+.hero-avatar {
+  width: 62px;
+  height: 62px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  color: #fff;
+  background: var(--text-h);
+
+  font-size: 22px;
+  font-weight: 600;
+
+  box-shadow:
+    0 0 0 6px var(--accent-bg);
+}

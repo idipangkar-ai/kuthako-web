@@ -1,0 +1,30 @@
+.hero-scroll {
+  position: absolute;
+
+  bottom: 26px;
+  left: 32px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  color: var(--text);
+
+  font-size: 11px;
+
+  letter-spacing: 0.3px;
+}
+
+.hero-scroll-line {
+  width: 42px;
+  height: 1px;
+
+  background: var(--border);
+}
+
+@media (max-width: 760px) {
+  .hero-scroll {
+    display: none;
+  }
+}

@@ -1,0 +1,17 @@
+.hero-qr {
+  width: 128px;
+  height: 128px;
+
+  margin-top: 30px;
+  padding: 12px;
+
+  box-sizing: border-box;
+
+  border: 1px solid var(--border);
+  border-radius: 18px;
+
+  background: #fff;
+
+  display: grid;
+  place-items: center;
+}

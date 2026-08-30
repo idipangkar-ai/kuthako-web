@@ -1,0 +1,30 @@
+.hero-title {
+  margin: 0;
+
+  font-size: clamp(64px, 9vw, 124px);
+  line-height: 0.86;
+
+  letter-spacing: -0.065em;
+
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+.hero-title span {
+  color: var(--text);
+}
+
+.hero-title strong {
+  font-weight: 500;
+
+  background: linear-gradient(
+    110deg,
+    var(--text-h),
+    var(--accent)
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+}

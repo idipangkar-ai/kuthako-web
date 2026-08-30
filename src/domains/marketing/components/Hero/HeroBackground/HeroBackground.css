@@ -1,0 +1,128 @@
+.hero-background {
+  position: absolute;
+  inset: 0;
+
+  overflow: hidden;
+
+  pointer-events: none;
+}
+
+.hero-background-grid {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      to right,
+      color-mix(in srgb, var(--border) 38%, transparent) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      color-mix(in srgb, var(--border) 38%, transparent) 1px,
+      transparent 1px
+    );
+
+  background-size: 72px 72px;
+
+  mask-image:
+    linear-gradient(
+      to bottom,
+      black,
+      transparent 76%
+    );
+
+  opacity: 0.42;
+}
+
+.hero-background-glow {
+  position: absolute;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  filter: blur(100px);
+
+  opacity: 0.08;
+
+  animation: heroAmbientGlow 10s ease-in-out infinite alternate;
+}
+
+.hero-background-glow-one {
+  width: 520px;
+  height: 520px;
+
+  top: 12%;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background:
+    radial-gradient(
+      circle,
+      var(--accent),
+      transparent 70%
+    );
+}
+
+.hero-background-glow-two {
+  width: 380px;
+  height: 380px;
+
+  right: -100px;
+  bottom: -100px;
+
+  background:
+    radial-gradient(
+      circle,
+      var(--accent),
+      transparent 70%
+    );
+
+  opacity: 0.045;
+
+  animation-delay: -4s;
+}
+
+.hero-background-orbit {
+  position: absolute;
+
+  left: 50%;
+
+  border: 1px solid var(--accent-border);
+
+  border-radius: 50%;
+
+  transform: translateX(-50%);
+
+  opacity: 0.12;
+}
+
+.hero-background-orbit-one {
+  width: 720px;
+  height: 720px;
+
+  top: 390px;
+}
+
+.hero-background-orbit-two {
+  width: 980px;
+  height: 980px;
+
+  top: 260px;
+
+  opacity: 0.065;
+}
+
+@keyframes heroAmbientGlow {
+  from {
+    transform: translateX(-50%) scale(0.94);
+    opacity: 0.055;
+  }
+
+  to {
+    transform: translateX(-50%) scale(1.06);
+    opacity: 0.1;
+  }
+}

@@ -1,0 +1,40 @@
+.footer-column {
+  min-width: 90px;
+}
+
+.footer-column h3 {
+  margin: 0 0 17px;
+
+  color: var(--text-h);
+
+  font-size: 12px;
+  font-weight: 600;
+
+  letter-spacing: 0.2px;
+}
+
+.footer-column ul {
+  display: flex;
+  flex-direction: column;
+
+  gap: 11px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer-column a {
+  color: var(--text);
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  transition: color 160ms ease;
+}
+
+.footer-column a:hover {
+  color: var(--text-h);
+}

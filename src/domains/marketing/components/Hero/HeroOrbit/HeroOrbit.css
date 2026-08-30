@@ -1,0 +1,23 @@
+.hero-orbit {
+  position: absolute;
+  border: 1px solid var(--accent-border);
+  border-radius: 50%;
+  opacity: 0.25;
+}
+
+.hero-orbit-one {
+  width: 720px;
+  height: 720px;
+  top: 390px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-orbit-two {
+  width: 980px;
+  height: 980px;
+  top: 260px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.12;
+}

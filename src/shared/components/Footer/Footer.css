@@ -1,0 +1,37 @@
+.footer {
+  position: relative;
+
+  width: 100%;
+
+  border-top: 1px solid var(--border);
+
+  background: var(--bg);
+}
+
+.footer-inner {
+  width: min(1040px, calc(100% - 48px));
+
+  margin: 0 auto;
+
+  padding: 72px 0 28px;
+
+  box-sizing: border-box;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+@media (max-width: 760px) {
+  .footer-inner {
+    width: calc(100% - 32px);
+    padding: 52px 0 24px;
+  }
+
+  .footer-main {
+    flex-direction: column;
+    gap: 42px;
+  }
+}

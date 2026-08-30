@@ -1,0 +1,39 @@
+.hero {
+  min-height: calc(100svh - 76px);
+
+  position: relative;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: var(--bg);
+}
+
+.hero-content {
+  position: relative;
+
+  z-index: 10;
+
+  width: min(900px, calc(100% - 40px));
+
+  padding-top: 92px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .hero {
+    min-height: calc(100svh - 68px);
+  }
+
+  .hero-content {
+    padding-top: 68px;
+  }
+}

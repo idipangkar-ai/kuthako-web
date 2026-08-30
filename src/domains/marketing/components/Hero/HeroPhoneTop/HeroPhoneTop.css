@@ -1,0 +1,31 @@
+.hero-phone-top {
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 12px;
+
+  color: var(--text);
+
+  font-size: 9px;
+}
+
+.hero-phone-top span:first-child {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: var(--accent);
+}
+
+.hero-phone-top span:last-child {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: var(--border);
+}

@@ -1,0 +1,39 @@
+.header-nav-item {
+  position: relative;
+
+  color: var(--text);
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  transition:
+    color 160ms ease;
+}
+
+.header-nav-item::after {
+  content: '';
+
+  position: absolute;
+
+  left: 50%;
+  bottom: -7px;
+
+  width: 0;
+  height: 1px;
+
+  background: var(--text-h);
+
+  transform: translateX(-50%);
+
+  transition: width 160ms ease;
+}
+
+.header-nav-item:hover {
+  color: var(--text-h);
+}
+
+.header-nav-item:hover::after {
+  width: 100%;
+}

@@ -1,0 +1,16 @@
+.hero-description {
+  max-width: 520px;
+
+  margin: 34px 0 0;
+
+  color: var(--text);
+
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+@media (max-width: 760px) {
+  .hero-description {
+    font-size: 15px;
+  }
+}

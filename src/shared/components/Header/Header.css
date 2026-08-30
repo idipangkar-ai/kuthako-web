@@ -1,0 +1,37 @@
+.header {
+  position: relative;
+  z-index: 100;
+
+  width: 100%;
+
+  border-bottom: 1px solid var(--border);
+
+  background: color-mix(
+    in srgb,
+    var(--bg) 86%,
+    transparent
+  );
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.header-inner {
+  width: min(1126px, calc(100% - 40px));
+  min-height: 76px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+}
+
+@media (max-width: 760px) {
+  .header-inner {
+    min-height: 68px;
+    width: calc(100% - 32px);
+  }
+}

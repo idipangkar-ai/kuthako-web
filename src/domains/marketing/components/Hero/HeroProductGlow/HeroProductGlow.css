@@ -1,0 +1,16 @@
+.hero-product-glow {
+  position: absolute;
+
+  width: 320px;
+  height: 320px;
+
+  top: 70px;
+
+  border-radius: 50%;
+
+  background: var(--accent);
+
+  opacity: 0.12;
+
+  filter: blur(65px);
+}

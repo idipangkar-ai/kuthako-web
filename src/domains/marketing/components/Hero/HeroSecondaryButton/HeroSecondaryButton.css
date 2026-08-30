@@ -1,0 +1,27 @@
+.hero-secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 19px;
+
+  border-radius: 999px;
+  border: 1px solid var(--border);
+
+  text-decoration: none;
+
+  color: var(--text-h);
+  background: var(--bg);
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease;
+}
+
+.hero-secondary-button:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-border);
+}

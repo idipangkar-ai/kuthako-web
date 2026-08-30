@@ -1,0 +1,60 @@
+.hero-connections {
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+}
+
+.hero-connection-top-left {
+  top: 15%;
+  left: 3.5%;
+}
+
+.hero-connection-top-right {
+  top: 19%;
+  right: 3.5%;
+
+  animation-delay: -2s;
+}
+
+.hero-connection-bottom-left {
+  left: 5%;
+  bottom: 18%;
+
+  animation-delay: -4s;
+}
+
+.hero-connection-bottom-right {
+  right: 5%;
+  bottom: 14%;
+
+  animation-delay: -1s;
+}
+
+@media (max-width: 900px) {
+  .hero-connection {
+    transform: scale(0.9);
+  }
+
+  .hero-connection-top-left {
+    left: 2%;
+  }
+
+  .hero-connection-top-right {
+    right: 2%;
+  }
+
+  .hero-connection-bottom-left {
+    left: 2%;
+  }
+
+  .hero-connection-bottom-right {
+    right: 2%;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-connections {
+    display: none;
+  }
+}

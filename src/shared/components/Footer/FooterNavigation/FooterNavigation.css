@@ -1,0 +1,12 @@
+.footer-navigation {
+  display: flex;
+  gap: 72px;
+}
+
+@media (max-width: 760px) {
+  .footer-navigation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 38px 30px;
+  }
+}

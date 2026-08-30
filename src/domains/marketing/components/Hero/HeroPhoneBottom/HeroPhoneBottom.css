@@ -1,0 +1,26 @@
+.hero-phone-bottom {
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+}
+
+.hero-phone-bottom span {
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+
+  background: var(--border);
+}
+
+.hero-phone-bottom span:first-child {
+  width: 20px;
+
+  border-radius: 99px;
+
+  background: var(--text-h);
+}
