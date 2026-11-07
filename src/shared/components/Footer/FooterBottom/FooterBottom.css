@@ -32,11 +32,16 @@
 
 @media (max-width: 760px) {
   .footer-bottom {
-    margin-top: 48px;
+    margin-top: 36px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-direction: row;
+    white-space: nowrap;
+    font-size: 10px;
+  }
 
-    align-items: flex-start;
+  .footer-legal {
     gap: 14px;
-
-    flex-direction: column;
   }
 }

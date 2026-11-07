@@ -23,9 +23,9 @@ function Hero() {
         <HeroActions />
       </div>
 
+      <DesktopRecommendation />
       <HeroProduct />
       <HeroScroll />
-      <DesktopRecommendation />
     </section>
   )
 }

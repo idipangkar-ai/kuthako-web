@@ -6,7 +6,7 @@
 @media (max-width: 760px) {
   .footer-navigation {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 38px 30px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px 14px;
   }
 }
