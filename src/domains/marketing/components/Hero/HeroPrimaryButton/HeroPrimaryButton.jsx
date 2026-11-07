@@ -3,10 +3,10 @@ import './HeroPrimaryButton.css'
 function HeroPrimaryButton() {
   return (
     <a
-      href="#discover"
+      href="/how-it-works#download"
       className="hero-primary-button"
     >
-      Discover KuthaKo
+      Download KuthaKo
       <span aria-hidden="true">↗</span>
     </a>
   )

@@ -4,17 +4,10 @@ function HeaderActions() {
   return (
     <div className="header-actions">
       <a
-        href="/login"
-        className="header-login"
-      >
-        Sign in
-      </a>
-
-      <a
-        href="/get-started"
+        href="/how-it-works#download"
         className="header-start"
       >
-        Get started
+        Download app
         <span aria-hidden="true">↗</span>
       </a>
     </div>

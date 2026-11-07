@@ -1,0 +1,291 @@
+.how-options {
+  width: min(1120px, calc(100% - 48px));
+  margin-inline: auto;
+  padding: 28px 0 100px;
+}
+
+.how-options-heading {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.how-options-heading h2,
+.how-accept h2,
+.how-connected h2,
+.how-download h2 {
+  margin: 12px 0 0;
+  color: var(--text-h);
+  font-size: clamp(30px, 4vw, 48px);
+  font-weight: 620;
+  letter-spacing: -0.06em;
+  line-height: 1.08;
+}
+
+.how-options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.how-option-card {
+  position: relative;
+  display: grid;
+  min-height: 440px;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  background: var(--bg);
+  box-shadow: var(--shadow-sm);
+}
+
+.how-option-card-scan {
+  background:
+    radial-gradient(ellipse at 50% 100%, var(--accent-bg), transparent 58%),
+    var(--bg);
+}
+
+.how-option-card-share {
+  background:
+    radial-gradient(ellipse at 50% 100%, color-mix(in srgb, var(--accent-bg) 66%, transparent), transparent 58%),
+    var(--bg);
+}
+
+.how-option-copy {
+  position: relative;
+  z-index: 1;
+  padding: 30px 32px 0;
+}
+
+.how-step-number {
+  display: inline-grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  margin-bottom: 22px;
+  border: 1px solid var(--accent-border);
+  border-radius: 50%;
+  color: var(--accent);
+  background: var(--accent-bg);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.how-option-label {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1.4;
+}
+
+.how-option-copy h3 {
+  margin: 0;
+  color: var(--text-h);
+  font-size: clamp(26px, 3vw, 34px);
+  font-weight: 620;
+  letter-spacing: -0.055em;
+  line-height: 1.1;
+}
+
+.how-option-description {
+  max-width: 470px;
+  margin: 12px 0 0;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.how-option-description strong,
+.how-accept-copy strong {
+  color: var(--text-h);
+  font-weight: 650;
+}
+
+.how-scan-visual,
+.how-share-visual {
+  display: grid;
+  min-height: 208px;
+  place-items: center;
+  padding: 28px 20px 22px;
+}
+
+.how-scan-visual {
+  position: relative;
+}
+
+.how-scan-frame {
+  position: relative;
+  display: grid;
+  width: 168px;
+  height: 168px;
+  place-items: center;
+  border-radius: 28px;
+  background: color-mix(in srgb, var(--bg) 76%, transparent);
+  box-shadow: var(--shadow-md);
+  transform: rotate(-4deg);
+}
+
+.how-qr-mark {
+  width: 108px;
+  height: 108px;
+  color: var(--text-h);
+}
+
+.how-scan-corner {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-color: var(--accent);
+  border-style: solid;
+}
+
+.how-scan-corner-tl {
+  top: 22px;
+  left: 22px;
+  border-width: 2px 0 0 2px;
+  border-radius: 8px 0 0;
+}
+
+.how-scan-corner-tr {
+  top: 22px;
+  right: 22px;
+  border-width: 2px 2px 0 0;
+  border-radius: 0 8px 0 0;
+}
+
+.how-scan-corner-bl {
+  bottom: 22px;
+  left: 22px;
+  border-width: 0 0 2px 2px;
+  border-radius: 0 0 0 8px;
+}
+
+.how-scan-corner-br {
+  right: 22px;
+  bottom: 22px;
+  border-width: 0 2px 2px 0;
+  border-radius: 0 0 8px;
+}
+
+.how-scan-line {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  left: 24px;
+  height: 2px;
+  background: var(--accent);
+  box-shadow: 0 0 14px var(--accent);
+  opacity: 0.82;
+}
+
+.how-visual-caption {
+  position: absolute;
+  right: 50%;
+  bottom: 3px;
+  width: max-content;
+  padding: 5px 11px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text);
+  background: var(--bg);
+  font-size: 10px;
+  font-weight: 600;
+  transform: translateX(50%);
+}
+
+.how-share-visual {
+  align-items: end;
+  perspective: 800px;
+}
+
+.how-code-card {
+  width: min(100%, 270px);
+  padding: 15px;
+  border: 1px solid color-mix(in srgb, var(--border) 80%, transparent);
+  border-radius: 22px;
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  box-shadow: var(--shadow-md);
+  transform: rotate(2deg) rotateX(2deg);
+}
+
+.how-code-card-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-h);
+  font-size: 11px;
+}
+
+.how-code-card-top > span:last-child {
+  display: grid;
+  gap: 2px;
+}
+
+.how-code-card-top small {
+  color: var(--text-soft);
+  font-size: 10px;
+}
+
+.how-code-avatar {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  border-radius: 11px;
+  color: #fff;
+  background: var(--text-h);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.how-code-card .how-qr-mark {
+  width: 86px;
+  height: 86px;
+  margin: 14px auto;
+  color: var(--accent);
+}
+
+.how-share-link {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 11px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--text);
+  background: var(--bg);
+  font-size: 10px;
+}
+
+.how-share-arrow {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .how-options {
+    width: calc(100% - 32px);
+    padding: 18px 0 62px;
+  }
+
+  .how-options-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .how-option-card {
+    min-height: 420px;
+    border-radius: 24px;
+  }
+
+  .how-option-copy {
+    padding: 24px 23px 0;
+  }
+
+  .how-scan-visual,
+  .how-share-visual {
+    min-height: 190px;
+  }
+}

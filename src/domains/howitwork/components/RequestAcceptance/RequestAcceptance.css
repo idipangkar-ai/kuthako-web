@@ -1,0 +1,127 @@
+.how-accept {
+  display: grid;
+  width: min(1120px, calc(100% - 48px));
+  grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.8fr);
+  align-items: center;
+  gap: clamp(32px, 8vw, 100px);
+  margin-inline: auto;
+  padding: 68px clamp(24px, 7vw, 84px);
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  background: var(--bg-soft);
+}
+
+.how-accept h2 {
+  max-width: 520px;
+  margin: 12px 0 0;
+  color: var(--text-h);
+  font-size: clamp(30px, 4vw, 48px);
+  font-weight: 620;
+  letter-spacing: -0.06em;
+  line-height: 1.08;
+}
+
+.how-accept-copy > p:not(.how-eyebrow):not(.how-note) {
+  max-width: 520px;
+  margin: 16px 0 0;
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.how-accept-copy strong {
+  color: var(--text-h);
+  font-weight: 650;
+}
+
+.how-note {
+  display: inline-flex;
+  margin: 20px 0 0;
+  padding: 9px 13px;
+  border: 1px solid var(--accent-border);
+  border-radius: 999px;
+  color: var(--text-h);
+  background: var(--accent-bg);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.how-request-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: var(--bg);
+  box-shadow: var(--shadow-md);
+}
+
+.how-request-icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 16px;
+  color: #fff;
+  background: linear-gradient(145deg, #9a3cff, #117eea);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.how-request-details {
+  display: grid;
+  min-width: 0;
+  gap: 5px;
+}
+
+.how-request-kicker {
+  color: var(--accent);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.how-request-details strong {
+  color: var(--text-h);
+  font-size: 13px;
+}
+
+.how-request-details > span:last-child {
+  color: var(--text-soft);
+  font-size: 11px;
+}
+
+.how-request-check {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 auto;
+  place-items: center;
+  margin-left: auto;
+  border-radius: 50%;
+  color: #fff;
+  background: #1678ed;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .how-accept {
+    width: calc(100% - 32px);
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 32px 23px;
+    border-radius: 24px;
+  }
+
+  .how-request-card {
+    gap: 10px;
+    padding: 14px;
+  }
+
+  .how-request-details > span:last-child {
+    font-size: 10px;
+  }
+}

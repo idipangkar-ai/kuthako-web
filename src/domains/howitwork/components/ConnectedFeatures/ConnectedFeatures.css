@@ -1,0 +1,92 @@
+.how-connected {
+  width: min(1120px, calc(100% - 48px));
+  margin-inline: auto;
+  padding: 112px 0 100px;
+  text-align: center;
+}
+
+.how-connected h2 {
+  margin: 12px 0 0;
+  color: var(--text-h);
+  font-size: clamp(30px, 4vw, 48px);
+  font-weight: 620;
+  letter-spacing: -0.06em;
+  line-height: 1.08;
+}
+
+.how-connected-copy {
+  margin: 13px 0 0;
+  color: var(--text);
+  font-size: 15px;
+}
+
+.how-connected-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 34px;
+  text-align: left;
+}
+
+.how-connected-item {
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: var(--bg);
+}
+
+.how-connected-symbol {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  margin-bottom: 22px;
+  border-radius: 13px;
+  color: var(--accent);
+  background: var(--accent-bg);
+  font-size: 22px;
+}
+
+.how-connected-item h3 {
+  margin: 0;
+  color: var(--text-h);
+  font-size: 19px;
+  letter-spacing: -0.03em;
+}
+
+.how-connected-item p {
+  margin: 8px 0 0;
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 760px) {
+  .how-connected {
+    width: calc(100% - 32px);
+    padding: 78px 0 66px;
+  }
+
+  .how-connected-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .how-connected-item {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    column-gap: 12px;
+    align-items: center;
+    padding: 16px;
+  }
+
+  .how-connected-symbol {
+    grid-row: span 2;
+    margin: 0;
+  }
+
+  .how-connected-item p {
+    margin-top: 2px;
+  }
+}

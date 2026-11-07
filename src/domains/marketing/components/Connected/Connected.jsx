@@ -34,10 +34,10 @@ function Connected() {
         <div className="connected-actions">
 
           <a
-            href="#discover"
+            href="/how-it-works#download"
             className="connected-primary"
           >
-            Discover KuthaKo
+            Download KuthaKo
             <span aria-hidden="true">↗</span>
           </a>
 

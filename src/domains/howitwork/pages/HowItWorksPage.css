@@ -1,0 +1,5 @@
+.how-page {
+  overflow: hidden;
+  color: var(--text-h);
+  background: var(--bg);
+}
